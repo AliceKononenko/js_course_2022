@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0
+}
+body {
+
+}
+header {
+    position: absolute;
+    width: 1512px;
+    padding: 24px;    
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.logoHeader {
+    text-transform: uppercase;
+    position: absolute;
+    width: auto;
+    height: 49px;
+    margin: -24px;
+    padding: 0 10px 0 10px;
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 49px;  
+    background: linear-gradient(180deg, #E5B1A4, #E5B1A480);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.userName {
+    position: absolute;
+    width: auto;
+    height: 49px;
+    left: 1350px;
+    margin: -24px;
+    padding: 0 10px 0 10px;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 49px;
+    color: #000000;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.iconLog {
+    position: absolute;
+    width: auto;
+    height: 49px;
+    left: 1480px;
+    margin: -24px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1512px;
+    padding: 24px 24px 0 24px;    
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    height: 49px;
+
+}
+.logoFooter {
+    text-transform: uppercase;
+    position: absolute;
+    width: auto;
+    height: 49px;
+    padding: 0 20px 0 20px;
+    margin: -24px;
+    border-right: 1px solid black;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 49px;
+    color: #000000;
+}
+.authorFooter {
+    text-transform: uppercase;
+    position: absolute;
+    width: auto;
+    left: 129px;
+    height: 49px;
+    padding: 0 40px 0 40px;
+    margin: -24px;
+    border-right: 1px solid black;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 49px;
+    color: #000000;
+}
+.mailFooter {
+    position: absolute;
+    width: auto;
+    left: 391px;
+    height: 49px;
+    padding: 0 80px 0 80px;
+    margin: -24px;
+    border-right: 1px solid black;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 49px;
+    color: #000000;    
+}
+.versionFooter {
+    position: absolute;
+    width: auto;
+    left: 1365px;
+    height: 49px;
+    padding: 0 20px 0 20px;
+    margin: -24px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 49px;
+    color: #000000;
+}
