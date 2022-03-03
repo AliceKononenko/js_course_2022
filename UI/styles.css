@@ -1,13 +1,140 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0
+:root {
+    --header-height: 5rem;
+    --footer-height: 3rem;
+    --default-offset: 1rem;
 }
-body {
 
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
-header {
+
+header {  
+    padding: 0 var(--default-offset);  
+}
+
+footer {
+    justify-content: space-around;
+}
+
+.header .flex-footer { 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    gap: var(--default-offset);
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-header {
+    align-items: center;
+    border-bottom: 1px solid black;
+    display: flex;     
+    justify-content: space-between; 
+}
+
+.logo-header {  
+    background: linear-gradient(180deg, #E5B1A4, #E5B1A480);
+    flex: 1;
+    font-family: Montserrat;
+    font-size: var(--default-offset);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.user-name {
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    font-family: Montserrat;
+    font-style: italic;
+    height: 100%;
+    justify-content: center;
+    padding: 0 var(--default-offset);
+    position: relative;
+}
+
+.iconify {
+    font-size: 35px;
+    padding: 0 var(--default-offset);
+}
+
+.flex-footer {
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;    
+    font-family: Montserrat;
+    justify-content: space-between; 
+    padding: 0 var(--default-offset);      
+}
+
+.flex-footer .elem {
+    align-items: center;
+    border-right: 1px solid black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-footer {
+    text-transform: uppercase;
+}
+
+.author-footer {
+    text-transform: uppercase;
+}
+
+.version-footer {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.write-place {
+    border: 1px solid #E5B1A4;
+    position: absolute;
+    width: 1000px;
+    height: 80px;
+    margin: 0 0 0 170px;
+    top: 100px;
+
+    font-family: Montserrat;
+    font-size: var(--default-offset);
+    padding: var(--default-offset);
+}
+
+.filter {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    left: 1230px;
+    top: 100px;
+    font-size: 35px;
+    padding: 0 var(--default-offset);
+    background-color: red;
+}
+
+/*header {
     position: absolute;
     width: 1512px;
     padding: 24px;    
@@ -116,3 +243,4 @@ footer {
     line-height: 49px;
     color: #000000;
 }
+*/
