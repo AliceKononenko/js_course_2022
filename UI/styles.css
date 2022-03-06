@@ -91,7 +91,7 @@ html {
 
 .input-body {
     display: flex;
-    height: 10rem;
+    height: 7rem;
     margin-bottom: 1.5rem;
 }
 
@@ -122,8 +122,7 @@ html {
 
 .twits {
     flex: auto;
-    overflow: auto;
-    
+    overflow: auto;    
 }
 
 .twit-container {
@@ -145,10 +144,42 @@ html {
     justify-content: space-between;
     padding: 1rem 4rem;
     align-items: center;
+    
 }
 
 .twit-text {
     display: flex;
+}
+
+.all-comments {
+    flex: auto;
+    overflow: auto;
+}
+
+.twit-comments {
+    border: var(--border-default);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-author {
+    color: var(--pink-primary);
+    font-weight: 600;
+    height: 100%;
+    width: 192px;
+}
+
+.comment-content {
+    flex-grow: 4;
+    padding: 0 1rem 0 2rem;
+    display: flex;
+    max-width: 670px;
+    height: auto;
+}
+
+.comment-date {
+    max-width: 192px;
 }
 
 .hashtag {
@@ -167,6 +198,7 @@ html {
     display: flex;
     padding: 0.5rem 1rem;
     align-items: center;
+    justify-content: space-between;
 }
 
 .comment-count {
@@ -185,8 +217,16 @@ html {
     border-radius: 4px;
     background-color: var(--gray-light);
     outline: unset;
-    width: 100%;
+    flex-grow: 4;
+    max-width: 890px;
+}
 
+.send-comment {
+    border: none;
+}
+
+.send-icon {
+    font-size: 2rem;
 }
 
 .button-load {
@@ -201,9 +241,36 @@ html {
     border-radius: 4px;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
+    border: var(--border-default);    
+}
 
-    border: var(--border-default);
-    
+.back-main-container {
+    display: flex;
+    justify-content: center;    
+}
+
+.link-main {
+    text-decoration: none;
+}
+
+.back-main {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: unset;
+    font-style: italic;
+}
+
+.back-icon {
+    font-size: 1rem;
+    border: none;
+}
+
+.back-text {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    display: flex;
 }
 
 .footer {
