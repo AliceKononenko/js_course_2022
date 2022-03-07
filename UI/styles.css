@@ -198,9 +198,10 @@ html {
 .hashtag-list {
     border: var(--border-default);
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+    gap: .5rem;
 }
 
 .edit-container {
@@ -215,6 +216,7 @@ html {
 .delete-hashtag {
     border: none;
     background-color: unset;
+    width: 2rem;
 }
 
 .delete-icon {
