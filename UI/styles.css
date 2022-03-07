@@ -120,6 +120,140 @@ html {
     background-color: var(--gray-light);
 }
 
+.filter-container {
+    max-width: 250px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.filter-options {
+    border: var(--border-default);  
+    padding: 1rem; 
+}
+
+.filter-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-input {
+    border: var(--border-default);
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.date-filter {
+    margin-bottom: 1rem;
+}
+
+.filter-date {
+    border: var(--border-default);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.date {
+    outline: unset;
+    padding-right: 1rem;
+}
+
+.calendar {
+    border: none;
+    background-color: unset;
+}
+
+.filter-hashtag {
+    margin-bottom: 1rem;
+}
+
+.hashtag-line {
+    display: flex;
+    flex-direction: row;
+    border: var(--border-default);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.input-hashtag {
+    text-transform: uppercase;
+    border: none;
+    max-width: 10rem;
+}
+
+.add-hashtag {
+    border: none;
+    background-color: unset;
+}
+
+
+.hashtag-list {
+    border: var(--border-default);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-hashtag {
+    display: flex;
+}
+
+.delete-hashtag {
+    border: none;
+    background-color: unset;
+}
+
+.delete-icon {
+    color: var(--pink-primary);
+}
+
+.filter-buttons {
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    height: 2rem;
+    width: auto;
+}
+
+.accept-filters {
+    background-color: var(--pink-primary);
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: var(--border-default);
+    font-size: .8rem; 
+    padding: 3px 1.5rem;    
+}
+
+.reset-filters {
+    background-color: var(--gray-dark);
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: var(--border-default);
+    font-size: .8rem; 
+    padding: 3px 1.5rem;
+    height: 100%;
+}
+
 .twits {
     flex: auto;
     overflow: auto;    
