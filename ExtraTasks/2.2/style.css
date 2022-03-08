@@ -1,0 +1,385 @@
+:root {
+  --gray-primary: rgb(168, 168, 168);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: rgb(212, 211, 211);
+}
+
+.wrapper {
+  margin: 1rem;
+}
+
+.items {
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.quality {
+  background-color: rgb(58, 179, 58);
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem;
+  font-size: 12px;
+  max-width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.all-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgb(192, 191, 191);
+  padding: 0.5rem 1rem;
+  width: 25%;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.button-choose-ticket {
+  background-color: rgb(255, 102, 0);
+
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.button-choose-text {
+  color: white;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin: 1rem;
+}
+
+.icons-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aviacompany {
+  border-radius: 50%;
+  height: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.icons-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+}
+
+.button-red {
+  color: red;
+}
+
+.small-icon {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: auto;
+}
+
+.button-red,
+.button-gray {
+  border: none;
+  border-radius: 50%;
+  padding: 0.1rem;
+  background-color: white;
+  margin: 0 0.2rem;
+}
+
+.button-gray {
+  color: var(--gray-primary);
+}
+
+.info-flights {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.flight-away,
+.flight-back {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--gray-primary);
+  padding-top: 1rem;
+}
+
+.flight-away {
+  padding-bottom: 1rem;
+}
+
+.info-leaving,
+.info-arriving {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.time {
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.right-location-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.time,
+.location {
+  padding-bottom: 0.2rem;
+}
+
+.location,
+.date {
+  color: var(--gray-primary);
+  font-size: 0.7rem;
+}
+
+.flight-statement {
+  display: flex;
+  flex-direction: column;
+  color: var(--gray-primary);
+  width: 60%;
+  padding: 0 0.5rem;
+}
+
+.way {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.plane-icon {
+  color: var(--gray-primary);
+}
+
+.way-time {
+  font: var(--gray-primary);
+  font-size: 0.7rem;
+}
+
+.way-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.flight-segment-1first {
+  width: 15%;
+}
+
+.flight-segment-2first {
+  width: 50%;
+}
+
+.flight-segment-3first {
+  width: 20%;
+}
+
+.flight-segment-4first {
+  width: 65%;
+}
+
+.flight-segment-1first,
+.flight-segment-1second,
+.flight-segment-2first,
+.flight-segment-2second,
+.flight-segment-3first,
+.flight-segment-3second,
+.flight-segment-4first,
+.flight-segment-4second {
+  background-color: var(--gray-primary);
+  height: 3px;
+  border-radius: 4px;
+}
+
+.flight-segment-1waiting {
+  background-color: var(--gray-primary);
+  width: 50%;
+  height: 1px;
+  border-radius: 4px;
+}
+
+.flight-segment-2waiting {
+  background-color: var(--gray-primary);
+  width: 35%;
+  height: 1px;
+  border-radius: 4px;
+}
+
+.flight-segment-3waiting,
+.flight-segment-4waiting {
+  background-color: var(--gray-primary);
+  width: 15%;
+  height: 1px;
+  border-radius: 4px;
+}
+
+.flight-segment-1second {
+  width: 35%;
+}
+
+.flight-segment-2second {
+  width: 15%;
+}
+
+.flight-segment-3second {
+  width: 65%;
+}
+
+.flight-segment-4second {
+  width: 20%;
+}
+
+.airports {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.airport1_1,
+.airport1_2,
+.airport1_3,
+.airport2_1,
+.airport2_2,
+.airport2_3,
+.airport3_1,
+.airport3_2,
+.airport3_3,
+.airport4_1,
+.airport4_2,
+.airport4_3 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgb(0, 140, 255);
+  justify-content: center;
+  display: flex;
+}
+
+.airport1_1 {
+  width: 15%;
+}
+
+.airport1_2 {
+  width: 60%;
+}
+
+.airport1_3 {
+  width: 35%;
+}
+.airport2_1 {
+  width: 50%;
+}
+
+.airport2_2 {
+  width: 35%;
+}
+
+.airport2_3 {
+  width: 15%;
+}
+
+.airport3_1 {
+  width: 20%;
+}
+
+.airport3_2 {
+  width: 15%;
+}
+
+.airport3_3 {
+  width: 65%;
+}
+
+.airport4_1 {
+  width: 65%;
+}
+
+.airport4_2 {
+  width: 15%;
+}
+
+.airport4_3 {
+  width: 20%;
+}
+
+.flight-back {
+  border-bottom: unset;
+}
+
+.quality-purple {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem;
+  font-size: 12px;
+  max-width: 110px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.tickets {
+  color: red;
+  padding-top: 1rem;
+  font-weight: 600;
+}
